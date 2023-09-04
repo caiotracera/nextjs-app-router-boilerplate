@@ -17,7 +17,9 @@ exports[`<Main /> should render the heading 1`] = `
 <div
   class="c0"
 >
-  <h1>
+  <h1
+    class=""
+  >
     hello world
   </h1>
 </div>

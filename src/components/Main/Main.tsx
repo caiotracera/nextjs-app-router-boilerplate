@@ -1,9 +1,10 @@
 import * as S from './styles';
+import { MainProps } from './types';
 
-export function Main() {
+export function Main({ title = 'hello world' }: MainProps) {
   return (
     <S.Wrapper>
-      <h1>hello world</h1>
+      <S.Title>{title}</S.Title>
     </S.Wrapper>
   );
 }
