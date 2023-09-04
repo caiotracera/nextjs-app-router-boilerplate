@@ -1,0 +1,30 @@
+name: ci
+on: ["pull_request"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Linting
+        run: npm ruin lint
+
+      - name: Testing
+        run: npm run test:ci
+
+      - name: Build
+        run: npm run build
