@@ -27,6 +27,8 @@ const config: Config = {
     '!src/app/**',
     '!src/utils/tests/**',
     '!src/lib/registry.tsx',
+    '!src/@types/**',
+    '!src/styles/**',
   ],
 
   // The directory where Jest should output its coverage files
@@ -98,6 +100,8 @@ const config: Config = {
   moduleNameMapper: {
     '@/utils/(.*)': '<rootDir>/src/utils/$1',
     '@/components/(.*)': '<rootDir>/src/components/$1',
+    '^styled-components':
+      'styled-components/dist/styled-components.browser.cjs.js',
   },
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
