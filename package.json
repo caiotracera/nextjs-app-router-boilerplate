@@ -48,7 +48,7 @@
     "jest-environment-jsdom": "29.7.0",
     "jest-styled-components": "7.2.0",
     "lint-staged": "15.2.0",
-    "storybook": "7.6.3",
+    "storybook": "7.6.21",
     "ts-node": "10.9.1",
     "tsconfig-paths-webpack-plugin": "4.1.0"
   }
